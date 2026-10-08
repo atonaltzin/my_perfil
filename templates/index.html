@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tony | José Atonaltzin Maldonado Ortiz</title>
+
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+
+<!-- =====================================================
+     PORTADA
+===================================================== -->
+
+<header class="hero" id="inicio">
+
+    <nav class="navbar">
+        <a href="#inicio" class="logo">TONY<span>.</span></a>
+
+        <div class="nav-links">
+            <a href="#proposito">Propósito</a>
+            <a href="#historia">Mi historia</a>
+            <a href="#gustos">Sobre mí</a>
+        </div>
+    </nav>
+
+    <div class="hero-foto">
+        <img src="{{ url_for('static', filename='img/tony.jpg') }}"
+             alt="Tony">
+    </div>
+
+    <section class="hero-contenido">
+
+        <p class="etiqueta">BIENVENIDO A MI ESPACIO</p>
+
+        <h1>
+            ¡Hola! Soy
+            <span>Tony</span>
+        </h1>
+
+        <h2>José Atonaltzin Maldonado Ortiz</h2>
+
+        <p class="hero-texto">
+            Tecnología, educación y proyectos que buscan
+            convertir las ideas en experiencias reales.
+        </p>
+
+        <div class="hero-tags">
+            <span>Docencia</span>
+            <span>Tecnología</span>
+            <span>Desarrollo</span>
+        </div>
+
+        <button class="btn-principal" id="btnHistoria">
+            Conoce mi historia
+            <span class="material-symbols-rounded">arrow_downward</span>
+        </button>
+
+    </section>
+
+</header>
+
+
+<!-- =====================================================
+     MISIÓN · VISIÓN · VALORES
+===================================================== -->
+
+<section class="proposito" id="proposito">
+
+    <div class="encabezado-seccion">
+        <p class="etiqueta">LO QUE ME MUEVE</p>
+        <h2>Propósito</h2>
+        <p>
+            Tecnología y educación como herramientas para aprender,
+            crear y transformar.
+        </p>
+    </div>
+
+    <div class="proposito-grid">
+
+        <article class="tarjeta-proposito">
+
+            <span class="material-symbols-rounded icono">
+                rocket_launch
+            </span>
+
+            <h3>Misión</h3>
+
+            <p>
+                Desarrollar experiencias educativas y soluciones
+                tecnológicas que integren conocimiento, creatividad
+                e innovación para fortalecer el aprendizaje, la
+                resolución de problemas y el desarrollo de estudiantes
+                y comunidades.
+            </p>
+
+        </article>
+
+
+        <article class="tarjeta-proposito destacada">
+
+            <span class="material-symbols-rounded icono">
+                visibility
+            </span>
+
+            <h3>Visión</h3>
+
+            <p>
+                Ser un referente en la integración de tecnología y
+                educación mediante proyectos innovadores que generen
+                conocimiento, impulsen el talento y contribuyan a
+                resolver problemas reales.
+            </p>
+
+        </article>
+
+
+        <article class="tarjeta-proposito">
+
+            <span class="material-symbols-rounded icono">
+                diamond
+            </span>
+
+            <h3>Valores</h3>
+
+            <div class="valores">
+
+                <span>Compromiso</span>
+                <span>Aprendizaje continuo</span>
+                <span>Innovación</span>
+                <span>Colaboración</span>
+                <span>Integridad</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HISTORIA
+===================================================== -->
+
+<section class="historia" id="historia">
+
+    <div class="encabezado-seccion claro">
+        <p class="etiqueta">EL CAMINO</p>
+        <h2>Mi historia</h2>
+        <p>
+            De las bandas de guerra a la tecnología,
+            la programación y la docencia.
+        </p>
+    </div>
+
+
+    <div class="timeline">
+
+        <!-- 16 AÑOS / 2012 -->
+
+        <article class="momento">
+
+            <div class="momento-imagen">
+                <img src="{{ url_for('static', filename='img/banda-guerra.jpg') }}"
+                     alt="Etapa en bandas de guerra">
+            </div>
+
+            <div class="momento-contenido">
+
+                <span class="fecha">DESDE LOS 16 AÑOS · 2012</span>
+
+                <h3>Mis primeros pasos como instructor</h3>
+
+                <p>
+                    Comencé como maestro de bandas de guerra desde los
+                    16 años. En 2012 profesionalicé esta actividad ante
+                    la Organización Nacional de Bandas de Guerra y
+                    Escoltas de Bandera A.C. (ONBGE).
+                </p>
+
+                <p>
+                    Esta etapa también me permitió participar como
+                    evaluador en diferentes concursos.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- 2014 -->
+
+        <article class="momento inverso">
+
+            <div class="momento-imagen">
+                <img src="{{ url_for('static', filename='img/proyectos.jpg') }}"
+                     alt="Participación en proyectos tecnológicos">
+            </div>
+
+            <div class="momento-contenido">
+
+                <span class="fecha">2014</span>
+
+                <h3>La tecnología se convierte en parte del camino</h3>
+
+                <p>
+                    Siempre he participado en proyectos tecnológicos.
+                    Uno de los más representativos de esta etapa fue
+                    una aplicación móvil desarrollada para el programa
+                    <strong>Yo No Abandono</strong> del Gobierno Federal.
+                </p>
+
+                <p>
+                    Los proyectos comenzaron a convertirse en una forma
+                    de conectar tecnología con problemas y necesidades reales.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- 2018 -->
+
+        <article class="momento">
+
+            <div class="momento-imagen">
+                <img src="{{ url_for('static', filename='img/programador.jpg') }}"
+                     alt="Etapa profesional en programación">
+            </div>
+
+            <div class="momento-contenido">
+
+                <span class="fecha">2018</span>
+
+                <h3>Programación y desarrollo de software</h3>
+
+                <p>
+                    A partir de 2018 enfoqué mi trayectoria profesional
+                    en el desarrollo de software.
+                </p>
+
+                <p>
+                    Colaboré primero como programador, posteriormente
+                    como consultor y finalmente en procesos de
+                    reclutamiento de talento especializado en software.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- 2021 -->
+
+        <article class="momento inverso">
+
+            <div class="momento-imagen">
+                <img src="{{ url_for('static', filename='img/jefe-division.jpg') }}"
+                     alt="Docencia y proyectos universitarios">
+            </div>
+
+            <div class="momento-contenido">
+
+                <span class="fecha">2021</span>
+
+                <h3>Regreso a la docencia</h3>
+
+                <p>
+                    En 2021 regresé a las aulas universitarias,
+                    combinando nuevamente dos partes importantes
+                    de mi trayectoria: educación y tecnología.
+                </p>
+
+                <p>
+                    Llegué a desempeñarme como jefe de división de
+                    carrera de Tecnologías de la Información y
+                    Comunicación, al mismo tiempo que continué
+                    desarrollando proyectos con estudiantes.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROYECTOS -->
+
+        <article class="momento">
+
+            <div class="momento-imagen">
+                <img src="{{ url_for('static', filename='img/proyectoss.jpg') }}"
+                     alt="Equipos y proyectos tecnológicos">
+            </div>
+
+            <div class="momento-contenido">
+
+                <span class="fecha">PROYECTOS · CONCURSOS · CONGRESOS</span>
+
+                <h3>Aprender construyendo</h3>
+
+                <p>
+                    He dirigido y acompañado equipos estudiantiles
+                    en el desarrollo de proyectos para espacios como
+                    Innovatec y Expociencias.
+                </p>
+
+                <p>
+                    También he participado en congresos, talleres y
+                    actividades académicas en distintos espacios,
+                    compartiendo experiencias relacionadas con
+                    tecnología y educación.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACTUALIDAD
+===================================================== -->
+
+<section class="actualidad">
+
+    <div class="actualidad-contenido">
+
+        <span class="material-symbols-rounded gran-icono">
+            school
+        </span>
+
+        <p class="etiqueta">HOY</p>
+
+        <h2>Seguimos aprendiendo.</h2>
+
+        <p>
+            Hoy estoy con ustedes en el
+            <strong>TecNM, Instituto Tecnológico de Gustavo A. Madero II</strong>,
+            compartiendo experiencias, construyendo proyectos y
+            aprendiendo juntos.
+        </p>
+
+        <p class="mensaje-final">
+            Es un gusto coincidir con ustedes.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GUSTOS
+===================================================== -->
+
+<section class="gustos" id="gustos">
+
+    <div class="encabezado-seccion">
+        <p class="etiqueta">FUERA DEL CÓDIGO</p>
+        <h2>También soy esto...</h2>
+    </div>
+
+    <div class="gustos-grid">
+
+        <article>
+            <span class="material-symbols-rounded">coffee</span>
+            <h3>Café</h3>
+            <p>Una buena idea casi siempre puede comenzar con café.</p>
+        </article>
+
+        <article>
+            <span class="material-symbols-rounded">movie</span>
+            <h3>Series</h3>
+            <p>Historias, universos y una buena excusa para desconectarse.</p>
+        </article>
+
+        <article>
+            <span class="material-symbols-rounded">terminal</span>
+            <h3>Tecnología</h3>
+            <p>Programar, experimentar y descubrir cómo funcionan las cosas.</p>
+        </article>
+
+        <article>
+            <span class="material-symbols-rounded">psychology</span>
+            <h3>Aprender</h3>
+            <p>Siempre hay algo nuevo que investigar, probar o replantear.</p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FLASK
+===================================================== -->
+
+<footer>
+
+    <span class="material-symbols-rounded">dns</span>
+
+    <div>
+        <strong>Mi primera aplicación personal con Flask</strong>
+        <p>Python · Flask · HTML · CSS · JavaScript</p>
+    </div>
+
+    <span class="estado">
+        <i></i>
+        Servidor activo
+    </span>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
